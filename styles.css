@@ -140,7 +140,8 @@ header {
   }
 
   #mainLogo:hover {
-    animation: bounce .8s ease-out;
+    -webkit-animation: bounce .8s ease-out;
+            animation: bounce .8s ease-out;
   }
 
 
@@ -158,15 +159,73 @@ main {
       color: #ba8058;
       margin-right: 20px;
     }
-      main li img {
+      main li svg {
         margin-bottom: 15px;
         width: 170px;
+      }
+      main li svg:hover {
+        -webkit-animation: bounce .8s ease-in-out;
+                animation: bounce .8s ease-in-out;
       }
       main li span {
         margin-left: -40px;
       }
       main li:last-child {
         margin-right: 0;
+      }
+
+/*************************************
+Corgi Coat Colors
+/************************************/
+
+      /* st0 are face colors */
+      .corgiRed-st0,
+      .corgiBlackTan-st0 {
+        fill: #ba8058;
+      }
+
+      .corgiFawn-st0 {
+        fill: #eaaa7f;
+      }
+
+      .corgiSable-st0 {
+        fill: #844b24;
+      }
+
+      /* st1 are muzzle colors */
+      /* BlackTan st2 is also muzzle */
+      .corgiRed-st1,
+      .corgiFawn-st1,
+      .corgiSable-st1,
+      .corgiBlackTan-st2 {
+        fill: #fbfeff;
+      }
+
+      .corgiBlackTan-st1 {
+        fill: #52595f;
+      }
+
+      /* st2 are eye/nose colors */
+      /* except BlackTan st3 */
+      .corgiRed-st2,
+      .corgiFawn-st2,
+      .corgiSable-st2,
+      .corgiBlackTan-st3 {
+        fill: #2d3339;
+      }
+
+      /* st3 are eyebrows colors */
+
+      .corgiRed-st3 {
+        fill: #eaaa7f;
+      }
+
+      .corgiFawn-st3 {
+        fill: #f4c6a6;
+      }
+
+      .corgiSable-st3 {
+        fill: #ba8058;
       }
 
 footer {
